@@ -1,0 +1,5 @@
+src
+.babelrc
+.gitignore
+node_modules
+**/.DS_Store

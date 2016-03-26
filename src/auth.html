@@ -1,0 +1,22 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>auth</title>
+    <script type="text/javascript">
+        window.onload = function() {
+
+            window.location.hash.split('&').forEach(function(hash) {
+                var h = hash.split('=');
+                if (h[0].indexOf('access_token') > -1) {
+                    // console.log(h[1]);
+                    window.location.href = '/?access_token='+h[1];
+                }
+
+            });
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
